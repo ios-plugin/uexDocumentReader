@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<uexplugins>
+    <plugin name="uexDocumentReader">
+        <method name="openDocumentReader"></method>
+        <method name="close"></method>
+    </plugin>
+</uexplugins>

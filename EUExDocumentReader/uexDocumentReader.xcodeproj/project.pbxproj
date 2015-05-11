@@ -1,0 +1,362 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CFA579C18C0899400B636E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFA579B18C0899400B636E9 /* Foundation.framework */; };
+		3CFA57CE18C089D200B636E9 /* libAppCanEngine_IOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFA57CD18C089D200B636E9 /* libAppCanEngine_IOS.a */; };
+		3CFA57D018C08A2D00B636E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFA57CF18C08A2D00B636E9 /* UIKit.framework */; };
+		3CFA57D218C08A3D00B636E9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFA57D118C08A3D00B636E9 /* libsqlite3.dylib */; };
+		3CFA57D418C08A4300B636E9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFA57D318C08A4300B636E9 /* libz.dylib */; };
+		3CFA57D618C08A6E00B636E9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFA57D518C08A6E00B636E9 /* SystemConfiguration.framework */; };
+		3CFA57D818C08A7700B636E9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFA57D718C08A7700B636E9 /* MobileCoreServices.framework */; };
+		3CFA57DA18C08A8500B636E9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFA57D918C08A8500B636E9 /* AudioToolbox.framework */; };
+		3CFA57DC18C08A9900B636E9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFA57DB18C08A9900B636E9 /* MapKit.framework */; };
+		3CFA57DE18C08ABA00B636E9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFA57DD18C08ABA00B636E9 /* CoreTelephony.framework */; };
+		3CFA57E918C08AED00B636E9 /* EUExDocumentReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFA57E518C08AED00B636E9 /* EUExDocumentReader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3CFA57EA18C08AED00B636E9 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFA57E818C08AED00B636E9 /* QuickLook.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3CFA579618C0899400B636E9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3CFA579818C0899400B636E9 /* uexDocumentReader.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = uexDocumentReader.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CFA579B18C0899400B636E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3CFA57CD18C089D200B636E9 /* libAppCanEngine_IOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAppCanEngine_IOS.a; path = ../libAppCanEngine_IOS.a; sourceTree = "<group>"; };
+		3CFA57CF18C08A2D00B636E9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3CFA57D118C08A3D00B636E9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		3CFA57D318C08A4300B636E9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		3CFA57D518C08A6E00B636E9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3CFA57D718C08A7700B636E9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3CFA57D918C08A8500B636E9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3CFA57DB18C08A9900B636E9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3CFA57DD18C08ABA00B636E9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		3CFA57E018C08AED00B636E9 /* EUExBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBase.h; sourceTree = "<group>"; };
+		3CFA57E118C08AED00B636E9 /* EUExBaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBaseDefine.h; sourceTree = "<group>"; };
+		3CFA57E218C08AED00B636E9 /* EUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUtility.h; sourceTree = "<group>"; };
+		3CFA57E318C08AED00B636E9 /* EUExDocumentReader-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EUExDocumentReader-Prefix.pch"; path = "EUExDocumentReader/EUExDocumentReader-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		3CFA57E418C08AED00B636E9 /* EUExDocumentReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EUExDocumentReader.h; path = EUExDocumentReader/EUExDocumentReader.h; sourceTree = SOURCE_ROOT; };
+		3CFA57E518C08AED00B636E9 /* EUExDocumentReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EUExDocumentReader.m; path = EUExDocumentReader/EUExDocumentReader.m; sourceTree = SOURCE_ROOT; };
+		3CFA57E818C08AED00B636E9 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QuickLook.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CFA579518C0899400B636E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CFA57DE18C08ABA00B636E9 /* CoreTelephony.framework in Frameworks */,
+				3CFA57DC18C08A9900B636E9 /* MapKit.framework in Frameworks */,
+				3CFA57DA18C08A8500B636E9 /* AudioToolbox.framework in Frameworks */,
+				3CFA57D818C08A7700B636E9 /* MobileCoreServices.framework in Frameworks */,
+				3CFA57D618C08A6E00B636E9 /* SystemConfiguration.framework in Frameworks */,
+				3CFA57EA18C08AED00B636E9 /* QuickLook.framework in Frameworks */,
+				3CFA57D418C08A4300B636E9 /* libz.dylib in Frameworks */,
+				3CFA57D218C08A3D00B636E9 /* libsqlite3.dylib in Frameworks */,
+				3CFA57D018C08A2D00B636E9 /* UIKit.framework in Frameworks */,
+				3CFA579C18C0899400B636E9 /* Foundation.framework in Frameworks */,
+				3CFA57CE18C089D200B636E9 /* libAppCanEngine_IOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CFA578F18C0899400B636E9 = {
+			isa = PBXGroup;
+			children = (
+				3CFA579D18C0899400B636E9 /* uexDocumentReader */,
+				3CFA579A18C0899400B636E9 /* Frameworks */,
+				3CFA579918C0899400B636E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CFA579918C0899400B636E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CFA579818C0899400B636E9 /* uexDocumentReader.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CFA579A18C0899400B636E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CFA57DD18C08ABA00B636E9 /* CoreTelephony.framework */,
+				3CFA57DB18C08A9900B636E9 /* MapKit.framework */,
+				3CFA57D918C08A8500B636E9 /* AudioToolbox.framework */,
+				3CFA57D718C08A7700B636E9 /* MobileCoreServices.framework */,
+				3CFA57D518C08A6E00B636E9 /* SystemConfiguration.framework */,
+				3CFA57D318C08A4300B636E9 /* libz.dylib */,
+				3CFA57D118C08A3D00B636E9 /* libsqlite3.dylib */,
+				3CFA57CF18C08A2D00B636E9 /* UIKit.framework */,
+				3CFA57CD18C089D200B636E9 /* libAppCanEngine_IOS.a */,
+				3CFA579B18C0899400B636E9 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CFA579D18C0899400B636E9 /* uexDocumentReader */ = {
+			isa = PBXGroup;
+			children = (
+				3CFA57DF18C08AED00B636E9 /* engineHeader */,
+				3CFA57E318C08AED00B636E9 /* EUExDocumentReader-Prefix.pch */,
+				3CFA57E418C08AED00B636E9 /* EUExDocumentReader.h */,
+				3CFA57E518C08AED00B636E9 /* EUExDocumentReader.m */,
+				3CFA57E618C08AED00B636E9 /* sourceCode */,
+			);
+			path = uexDocumentReader;
+			sourceTree = "<group>";
+		};
+		3CFA57DF18C08AED00B636E9 /* engineHeader */ = {
+			isa = PBXGroup;
+			children = (
+				3CFA57E018C08AED00B636E9 /* EUExBase.h */,
+				3CFA57E118C08AED00B636E9 /* EUExBaseDefine.h */,
+				3CFA57E218C08AED00B636E9 /* EUtility.h */,
+			);
+			name = engineHeader;
+			path = EUExDocumentReader/engineHeader;
+			sourceTree = SOURCE_ROOT;
+		};
+		3CFA57E618C08AED00B636E9 /* sourceCode */ = {
+			isa = PBXGroup;
+			children = (
+				3CFA57E718C08AED00B636E9 /* framework */,
+			);
+			name = sourceCode;
+			path = EUExDocumentReader/sourceCode;
+			sourceTree = SOURCE_ROOT;
+		};
+		3CFA57E718C08AED00B636E9 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				3CFA57E818C08AED00B636E9 /* QuickLook.framework */,
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CFA579718C0899400B636E9 /* uexDocumentReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CFA57BB18C0899400B636E9 /* Build configuration list for PBXNativeTarget "uexDocumentReader" */;
+			buildPhases = (
+				3CFA579418C0899400B636E9 /* Sources */,
+				3CFA579518C0899400B636E9 /* Frameworks */,
+				3CFA579618C0899400B636E9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = uexDocumentReader;
+			productName = uexDocumentReader;
+			productReference = 3CFA579818C0899400B636E9 /* uexDocumentReader.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CFA579018C0899400B636E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = demo;
+			};
+			buildConfigurationList = 3CFA579318C0899400B636E9 /* Build configuration list for PBXProject "uexDocumentReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3CFA578F18C0899400B636E9;
+			productRefGroup = 3CFA579918C0899400B636E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CFA579718C0899400B636E9 /* uexDocumentReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CFA579418C0899400B636E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CFA57E918C08AED00B636E9 /* EUExDocumentReader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3CFA57B918C0899400B636E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: leilei xu (T8E4RVNP82)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		3CFA57BA18C0899400B636E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: leilei xu (T8E4RVNP82)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+		3CFA57BC18C0899400B636E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: leilei xu (T8E4RVNP82)";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/uexDocumentReader/";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = /tmp/uexDocumentReader.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/yangfan/Desktop/插件动态库/uexDocumentReader/uexDocumentReader/sourceCode/framework",
+					"/Users/yangfan/Desktop/插件动态库2/EUExDocumentReader/EUExDocumentReader/sourceCode/framework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EUExDocumentReader/EUExDocumentReader-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3CFA57BD18C0899400B636E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: leilei xu (T8E4RVNP82)";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/uexDocumentReader/";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = /tmp/uexDocumentReader.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/yangfan/Desktop/插件动态库/uexDocumentReader/uexDocumentReader/sourceCode/framework",
+					"/Users/yangfan/Desktop/插件动态库2/EUExDocumentReader/EUExDocumentReader/sourceCode/framework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EUExDocumentReader/EUExDocumentReader-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CFA579318C0899400B636E9 /* Build configuration list for PBXProject "uexDocumentReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CFA57B918C0899400B636E9 /* Debug */,
+				3CFA57BA18C0899400B636E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CFA57BB18C0899400B636E9 /* Build configuration list for PBXNativeTarget "uexDocumentReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CFA57BC18C0899400B636E9 /* Debug */,
+				3CFA57BD18C0899400B636E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CFA579018C0899400B636E9 /* Project object */;
+}
