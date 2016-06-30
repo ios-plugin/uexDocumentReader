@@ -6,8 +6,6 @@
 //  Copyright (c) 2013年 AppCan. All rights reserved.
 //
 
-#import "EUExBase.h"
-#import "EUExBase.h"
 #import "EUExBaseDefine.h"
 #import <QuickLook/QuickLook.h>
 

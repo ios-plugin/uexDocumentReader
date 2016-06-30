@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2127A5671D24BE6400134EFB /* AppCanKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2127A5661D24BE6400134EFB /* AppCanKit.framework */; };
 		5A5015E0188FC25A0022E07C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5015DF188FC25A0022E07C /* Foundation.framework */; };
 		5A5015E7188FC25A0022E07C /* EUExDocumentReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5015E6188FC25A0022E07C /* EUExDocumentReader.m */; };
 		5A9FF29B1890B1E400E16C52 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9FF29A1890B1E400E16C52 /* QuickLook.framework */; };
@@ -25,6 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2127A5661D24BE6400134EFB /* AppCanKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCanKit.framework; sourceTree = "<group>"; };
 		5A5015DC188FC25A0022E07C /* libuexDocumentReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libuexDocumentReader.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A5015DF188FC25A0022E07C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5A5015E3188FC25A0022E07C /* EUExDocumentReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EUExDocumentReader-Prefix.pch"; sourceTree = "<group>"; };
@@ -32,7 +34,6 @@
 		5A5015ED188FC25A0022E07C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5A5015F0188FC25A0022E07C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		5A60A96E18AB67F400C727A6 /* EUExDocumentReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EUExDocumentReader.h; sourceTree = "<group>"; };
-		5A9FF2951890B1E400E16C52 /* EUExBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBase.h; sourceTree = "<group>"; };
 		5A9FF2961890B1E400E16C52 /* EUExBaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBaseDefine.h; sourceTree = "<group>"; };
 		5A9FF2971890B1E400E16C52 /* EUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUtility.h; sourceTree = "<group>"; };
 		5A9FF29A1890B1E400E16C52 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QuickLook.framework; sourceTree = "<group>"; };
@@ -44,6 +45,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A5015E0188FC25A0022E07C /* Foundation.framework in Frameworks */,
+				2127A5671D24BE6400134EFB /* AppCanKit.framework in Frameworks */,
 				5A9FF29B1890B1E400E16C52 /* QuickLook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,7 +103,6 @@
 		5A9FF2941890B1E400E16C52 /* engineHeader */ = {
 			isa = PBXGroup;
 			children = (
-				5A9FF2951890B1E400E16C52 /* EUExBase.h */,
 				5A9FF2961890B1E400E16C52 /* EUExBaseDefine.h */,
 				5A9FF2971890B1E400E16C52 /* EUtility.h */,
 			);
@@ -111,6 +112,7 @@
 		5A9FF2981890B1E400E16C52 /* sourceCode */ = {
 			isa = PBXGroup;
 			children = (
+				2127A5661D24BE6400134EFB /* AppCanKit.framework */,
 				5A9FF2991890B1E400E16C52 /* framework */,
 			);
 			path = sourceCode;
@@ -261,6 +263,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/xll/Desktop/项目/Plugin3.0Project/EUExDocumentReader/EUExDocumentReader/sourceCode/framework",
+					"$(PROJECT_DIR)/EUExDocumentReader/sourceCode",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EUExDocumentReader/EUExDocumentReader-Prefix.pch";
@@ -279,6 +282,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/xll/Desktop/项目/Plugin3.0Project/EUExDocumentReader/EUExDocumentReader/sourceCode/framework",
+					"$(PROJECT_DIR)/EUExDocumentReader/sourceCode",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EUExDocumentReader/EUExDocumentReader-Prefix.pch";
