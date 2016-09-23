@@ -9,19 +9,25 @@
 
 #import "EUExDocumentReader.h"
 #import "EUtility.h"
-
+@interface EUExDocumentReader()
+@property(nonatomic,assign)UIStatusBarStyle style;
+@property BOOL isBarHidden;
+@end
 @implementation EUExDocumentReader {
     NSFileManager *fmanager;
     NSString *txtTmpPath;
 }
 
-@synthesize docPath;
-
-
 - (id)initWithBrwView:(EBrowserView *)eInBrwView{
     
     if (self=[super initWithBrwView:eInBrwView]) {
         self.docPath = @"";
+        _isBarHidden = [UIApplication sharedApplication].isStatusBarHidden;
+        if (!_isBarHidden) {
+            _style = [UIApplication sharedApplication].statusBarStyle;
+        }
+       
+        
     }
     return self;
 }
@@ -73,6 +79,10 @@
 
 -(void)previewControllerDidDismiss:(QLPreviewController *)controller
 {
+    [[UIApplication sharedApplication] setStatusBarHidden:_isBarHidden withAnimation:UIStatusBarAnimationNone];
+    if (!_isBarHidden) {
+         [[UIApplication sharedApplication] setStatusBarStyle:_style];
+    }
     [self close:nil];
 }
 
