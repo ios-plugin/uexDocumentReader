@@ -18,20 +18,15 @@
     NSString *txtTmpPath;
 }
 
-- (id)initWithBrwView:(EBrowserView *)eInBrwView{
-    
-    if (self=[super initWithBrwView:eInBrwView]) {
-        self.docPath = @"";
-        _isBarHidden = [UIApplication sharedApplication].isStatusBarHidden;
-        if (!_isBarHidden) {
-            _style = [UIApplication sharedApplication].statusBarStyle;
-        }
-       
-        
+
+@synthesize docPath;
+
+-(id)initWithWebViewEngine:(id<AppCanWebViewEngineObject>)engine{
+    if (self = [super initWithWebViewEngine:engine]) {
+         self.docPath = @"";
     }
     return self;
 }
-
 #pragma mark - QLPreviewController DataSource 
 
 - (NSInteger)numberOfPreviewItemsInPreviewController:(QLPreviewController *)controller 
@@ -102,7 +97,8 @@
     }
     qlPreViewController.dataSource = self;
     qlPreViewController.delegate = self;
-    [EUtility brwView:meBrwView navigationPresentModalViewController:qlPreViewController animated:YES];
+    //[EUtility brwView:meBrwView navigationPresentModalViewController:qlPreViewController animated:YES];
+    [[self.webViewEngine viewController] presentViewController:qlPreViewController animated:YES completion:nil];
 }
 
 #pragma mark - 进入插件界面退出后，点击“关闭”会调
