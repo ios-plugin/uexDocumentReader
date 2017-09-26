@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <uexplugins>
-  <plugin uexName="uexDocumentReader" version="3.0.6" build="6">
-  	<info>6: 修复与打包时IOS状态栏设置相冲突的问题</info>
+  <plugin uexName="uexDocumentReader" version="3.0.7" build="7">
+  	<info>7: 修复在某些页面中阅读器导航栏和状态栏重叠的问题</info>
+    <build>6: 修复与打包时IOS状态栏设置相冲突的问题</build>
     <build>5: IDE证书更新</build>
     <build>4: 添加IDE支持</build>
     <build>3: 修复因文件路径为空造成的奔溃和读取txt文件乱码的问题</build>
