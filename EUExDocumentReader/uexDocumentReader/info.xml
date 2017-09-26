@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <uexplugins>
     <plugin
-        uexName="uexDocumentReader" version="4.0.0" build="0">
-        <info>0: 阅读器功能插件</info>
+        uexName="uexDocumentReader" version="4.0.1" build="2017091401">
+        <info>1: 修复在某些页面中阅读器导航栏和状态栏重叠的问题</info>
+        <build>0: 阅读器功能插件</build>
     </plugin>
 </uexplugins>
