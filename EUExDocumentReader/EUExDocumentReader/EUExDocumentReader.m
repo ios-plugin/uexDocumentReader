@@ -95,6 +95,7 @@
     if (!qlPreViewController) {
         qlPreViewController = [[QLPreviewController alloc] init];
     }
+    qlPreViewController.view.bounds = CGRectMake(0, 0, qlPreViewController.view.frame.size.width, qlPreViewController.view.frame.size.height);
     qlPreViewController.dataSource = self;
     qlPreViewController.delegate = self;
     //[EUtility brwView:meBrwView navigationPresentModalViewController:qlPreViewController animated:YES];
