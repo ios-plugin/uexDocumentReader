@@ -90,6 +90,10 @@
 
 - (void)openDocumentReader:(NSMutableArray *)inArguments
 {
+    if (qlPreViewController) {
+        return;
+    }
+    
     NSString *filePath = @"";
     if (inArguments != nil && [inArguments count] == 1) {
         filePath = [self absPath:[inArguments objectAtIndex:0]];
